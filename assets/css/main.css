@@ -1,0 +1,1006 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Colors */
+:root {
+    --clr-blue: #1A91F0;
+    /* Blue color */
+    --clr-blue-mid: #1170CD;
+    /* Mid-blue color */
+    --clr-blue-dark: #1A1C6A;
+    /* Dark blue color */
+    --clr-white: #fff;
+    /* White color */
+    --clr-bright: #EFF2F9;
+    /* Bright color */
+    --clr-dark: #1e2532;
+    /* Dark color */
+    --clr-black: #000;
+    /* Black color */
+    --clr-grey: #656e83;
+    /* Grey color */
+    --clr-green: #084C41;
+    /* Green color */
+
+    /* Fonts */
+    --font-poppins: 'Poppins', sans-serif;
+    /* Poppins font */
+    --font-manrope: 'Manrope', sans-serif;
+    /* Manrope font */
+
+    /* Transition */
+    --transition: all 300ms ease-in-out;
+    /* Transition effect */
+}
+
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+html {
+    font-size: 10px;
+    /* Base font size */
+}
+
+body {
+    font-size: 1.6rem;
+    /* Default font size */
+    font-family: var(--font-poppins);
+    /* Default font family */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fonts */
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+.font-manrope {
+    font-family: var(--font-manrope);
+}
+
+/* Text colors */
+.text-blue {
+    color: var(--clr-blue);
+}
+
+.text-blue-mid {
+    color: var(--clr-blue-mid);
+}
+
+.text-blue-dark {
+    color: var(--clr-blue-dark);
+}
+
+.text-bright {
+    color: var(--clr-bright);
+}
+
+.text-dark {
+    color: var(--clr-dark);
+}
+
+.text-grey {
+    color: var(--clr-grey);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+/* Backgrounds */
+.bg-blue {
+    background-color: var(--clr-blue);
+}
+
+.bg-blue-mid {
+    background-color: var(--clr-blue-mid);
+}
+
+.bg-blue-dark {
+    background-color: var(--clr-blue-dark);
+}
+
+.bg-bright {
+    background-color: var(--clr-bright);
+}
+
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-grey {
+    background-color: var(--clr-grey);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.bg-black {
+    background-color: var(--clr-black);
+}
+
+.bg-green {
+    background-color: var(--clr-green);
+}
+
+/* Text alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Text transformation */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Text styles */
+.text {
+    color: var(--clr-dark);
+    opacity: 0.9;
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+/* Font weights */
+.fw-2 {
+    font-weight: 200;
+}
+
+.fw-3 {
+    font-weight: 300;
+}
+
+.fw-4 {
+    font-weight: 400;
+}
+
+.fw-5 {
+    font-weight: 500;
+}
+
+.fw-6 {
+    font-weight: 600;
+}
+
+.fw-7 {
+    font-weight: 700;
+}
+
+.fw-8 {
+    font-weight: 800;
+}
+
+/* Font sizes */
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+/* Letter spacing */
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+/* Bars button styles */
+.bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16.5px;
+    width: 25px;
+}
+
+.bars .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-blue);
+    transition: var(--transition);
+}
+
+.bars:hover .bar {
+    background-color: var(--clr-dark);
+}
+
+/* Button styles */
+.btn {
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--clr-blue);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border-color: var(--clr-grey);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border: 1px solid var(--clr-grey);
+    transition: var(--transition);
+}
+
+/* Button styles */
+.btn-secondary:hover {
+    background-color: var(--clr-blue);
+    /* Background color on hover */
+    color: var(--clr-white);
+    /* Text color on hover */
+    border-color: var(--clr-blue);
+    /* Border color on hover */
+}
+
+.btn-group button:first-child,
+.btn-group a:first-child {
+    margin-right: 1rem !important;
+    /* Margin for the first button in a button group */
+}
+
+/* Navbar part */
+.navbar {
+    height: 80px;
+    /* Navbar height */
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 8px;
+    /* Box shadow */
+}
+
+.navbar .container {
+    width: 100%;
+    /* Container width */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    /* Navbar brand font size */
+}
+
+.navbar-brand-text {
+    color: var(--clr-dark);
+    /* Navbar brand text color */
+    font-weight: 600;
+}
+
+.navbar-brand-text span {
+    color: var(--clr-blue);
+    /* Navbar brand span color */
+}
+
+.navbar-brand-icon {
+    width: 25px;
+    margin-right: 6px;
+    opacity: 0.8;
+    /* Navbar brand icon opacity */
+}
+
+.brand-and-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    min-height: calc(100vh - 80px);
+    /* Header min height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    max-width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-content img {
+    max-width: 760px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-top: 3.2rem;
+}
+
+/* Large title styles */
+.lg-title {
+    margin: 1.4rem 0;
+    /* Margin around the large title */
+    font-size: 37px;
+    /* Font size of the large title */
+    line-height: 1.4;
+    /* Line height of the large title */
+    color: var(--clr-dark);
+    /* Color of the large title */
+}
+
+/* Header content paragraph styles */
+.header-content p {
+    margin-bottom: 2.6rem;
+    /* Margin at the bottom of the paragraphs */
+    line-height: 1.6;
+    /* Line height of the paragraphs */
+}
+
+/* Section one styles */
+.section-one {
+    padding: 64px 0;
+    /* Padding of section one */
+    min-height: 80vh;
+    /* Minimum height of section one */
+    display: flex;
+    align-items: center;
+}
+
+.section-one-l img {
+    max-width: 545px;
+    /* Maximum width of the image in section one */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-one-r {
+    margin-top: 4rem;
+    /* Margin at the top of section one right column */
+}
+
+.section-one .btn-group {
+    margin-top: 2rem;
+    /* Margin at the top of the button group in section one */
+}
+
+.section-one-r {
+    max-width: 545px;
+    /* Maximum width of section one right column */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-one-r .btn-group {
+    margin-top: 3rem;
+    /* Margin at the top of the button group in section one right column */
+}
+
+/* Section two styles */
+.section-two {
+    padding: 64px 0;
+    /* Padding of section two */
+}
+
+.section-two .section-items {
+    display: grid;
+    gap: 2rem;
+    /* Gap between section items in section two */
+}
+
+.section-two .section-item {
+    max-width: 350px;
+    /* Maximum width of section items in section two */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-two .section-item-icon {
+    margin: 1rem 0;
+    /* Margin around section item icons in section two */
+}
+
+.section-two .section-item-icon img {
+    width: 80px;
+    /* Width of section item icons in section two */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-two .section-item-title {
+    color: var(--clr-blue-dark);
+    /* Color of section item titles in section two */
+    font-size: 1.8rem;
+    /* Font size of section item titles in section two */
+    font-weight: 600;
+    /* Font weight of section item titles in section two */
+}
+
+.section-two .text {
+    margin: 0.9rem 0;
+    /* Margin around texts in section two */
+}
+
+/* Footer styles */
+.footer {
+    padding: 3rem 0;
+    /* Padding of the footer */
+}
+
+.footer-content p {
+    color: var(--clr-grey);
+    /* Color of footer content paragraphs */
+}
+
+.footer-content p span {
+    color: var(--clr-white);
+    /* Color of spans within footer content paragraphs */
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    .section-two .section-items {
+        grid-template-columns: repeat(2, 1fr);
+        /* Grid template columns in section two for screens larger than 768px */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-one-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Grid template columns in section one for screens larger than 992px */
+        column-gap: 3rem;
+        /* Column gap in section one for screens larger than 992px */
+    }
+
+    .section-one-r {
+        text-align: left;
+        /* Text alignment in section one right column for screens larger than 992px */
+    }
+
+    .section-two .section-items {
+        grid-template-columns: repeat(3, 1fr);
+        /* Grid template columns in section two for screens larger than 992px */
+    }
+
+    .section-two .section-item {
+        text-align: left;
+        /* Text alignment in section items in section two for screens larger than 992px */
+    }
+
+    .section-two .section-item-icon img {
+        margin-left: 0;
+        /* Margin left of section item icons in section two for screens larger than 992px */
+    }
+}
+
+/* Resume page styles */
+#about-sc {
+    padding: 64px 0;
+    /* Padding of the resume page section with ID 'about-sc' */
+}
+
+.cv-form-row-title {
+    background-color: var(--clr-dark);
+    /* Background color of CV form row title */
+    padding: 0.8rem 1.6rem;
+    /* Padding of CV form row title */
+    margin-bottom: 2rem;
+    /* Margin at the bottom of CV form row title */
+}
+
+/* CV form row title styles */
+.cv-form-row-title h3 {
+    color: var(--clr-white);
+    /* Color of the CV form row title */
+    font-weight: 500;
+    /* Font weight of the CV form row title */
+    text-transform: uppercase;
+    /* Text transformation of the CV form row title */
+    letter-spacing: 1.5px;
+    /* Letter spacing of the CV form row title */
+    font-size: 1.7rem;
+    /* Font size of the CV form row title */
+}
+
+/* CV form block styles */
+.cv-form-blk {
+    margin: 3rem 0;
+    /* Margin around the CV form block */
+}
+
+/* CV form row styles */
+.cv-form-row {
+    padding: 3rem 2rem 0 2rem;
+    /* Padding of the CV form row */
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    /* Border of the CV form row */
+    margin-bottom: 1rem;
+    /* Margin at the bottom of the CV form row */
+    position: relative;
+}
+
+/* Textarea styles */
+textarea {
+    resize: none;
+    /* Disable the resizing of the textarea */
+}
+
+/* Form element styles */
+.form-elem {
+    margin-bottom: 3rem;
+    /* Margin at the bottom of the form element */
+    position: relative;
+}
+
+/* Form label styles */
+.form-label {
+    display: block;
+    /* Display the form label as a block element */
+    font-weight: 600;
+    /* Font weight of the form label */
+    font-size: 14px;
+    /* Font size of the form label */
+    color: var(--clr-dark);
+    /* Color of the form label */
+    margin-bottom: 0.5rem;
+    /* Margin at the bottom of the form label */
+}
+
+/* Form control styles */
+.form-control {
+    border-radius: none;
+    /* Border radius of the form control */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Border of the form control */
+    font-size: 14px;
+    /* Font size of the form control */
+    padding: 0.8rem 1.6rem;
+    /* Padding of the form control */
+    font-family: inherit;
+    /* Inherit the font family from the parent element */
+    width: 100%;
+    /* Width of the form control */
+    outline: 0;
+    /* Remove the outline of the form control */
+    transition: var(--transition);
+    /* Transition property of the form control */
+}
+
+/* Form control focus styles */
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+    /* Border color of the form control on focus */
+}
+
+/* Form text styles */
+.form-text {
+    color: #ca0b00;
+    /* Color of the form text */
+    font-size: 12px;
+    /* Font size of the form text */
+    position: absolute;
+    /* Position the form text absolutely */
+    letter-spacing: 0.5px;
+    /* Letter spacing of the form text */
+    top: calc(100% + 2px);
+    /* Position the form text below the form control */
+    left: 0;
+    /* Align the form text to the left */
+    width: 100%;
+    /* Width of the form text */
+}
+
+/* Columns styles */
+.cols-3,
+.cols-2 {
+    display: grid;
+    /* Display the columns as a grid */
+}
+
+/* Repeater add button styles */
+.repeater-add-btn {
+    width: 25px;
+    /* Width of the repeater add button */
+    height: 25px;
+    /* Height of the repeater add button */
+    background-color: var(--clr-blue-mid);
+    /* Background color of the repeater add button */
+    font-size: 1.6rem;
+    /* Font size of the repeater add button */
+    color: var(--clr-white);
+    /* Color of the repeater add button */
+    margin: 1rem 0;
+    /* Margin around the repeater add button */
+}
+
+/* Repeater remove button styles */
+.repeater-remove-btn {
+    position: absolute;
+    /* Position the repeater remove button absolutely */
+    top: 10px;
+    /* Position the repeater remove button from the top */
+    right: 10px;
+    /* Position the repeater remove button from the right */
+    z-index: 999;
+    /* Set the z-index of the repeater remove button */
+    width: 25px;
+    /* Width of the repeater remove button */
+    height: 25px;
+    /* Height of the repeater remove button */
+    border-radius: 50%;
+    /* Border radius of the repeater remove button */
+    background-color: #ca0b00;
+    /* Background color of the repeater remove button */
+    color: var(--clr-white);
+    /* Color of the repeater remove button */
+    font-size: 1.6rem;
+    /* Font size of the repeater remove button */
+}
+
+/* Preview section styles */
+.preview-cnt {
+    border-radius: 5px;
+    /* Border radius of the preview container */
+    display: grid;
+    /* Display the preview container as a grid */
+    grid-template-columns: 32% auto;
+    /* Grid template columns of the preview container */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* Box shadow of the preview container */
+    overflow: hidden;
+    /* Hide the overflow of the preview container */
+}
+
+.preview-cnt-l {
+    padding: 3rem 3rem 2rem 3rem;
+    /* Padding of the left section in the preview container */
+}
+
+.preview-cnt-r {
+    padding: 3rem 3rem 3rem 4rem;
+    /* Padding of the right section in the preview container */
+}
+
+.preview-cnt-l .preview-blk:nth-child(1) {
+    text-align: center;
+    /* Text alignment of the first preview block in the left section */
+}
+
+.preview-image {
+    width: 120px;
+    /* Width of the preview image */
+    height: 120px;
+    /* Height of the preview image */
+    border-radius: 50%;
+    /* Border radius of the preview image */
+    overflow: hidden;
+    /* Hide the overflow of the preview image */
+    margin-right: auto;
+    /* Margin on the right of the preview image */
+    margin-left: auto;
+    /* Margin on the left of the preview image */
+}
+
+/* Preview image styles */
+.preview-image img {
+    width: 100%;
+    /* Set the width of the preview image to 100% */
+    height: 100%;
+    /* Set the height of the preview image to 100% */
+    object-fit: cover;
+    /* Apply object-fit: cover to the preview image */
+}
+
+/* Preview item name styles */
+.preview-item-name {
+    font-size: 2.4rem;
+    /* Font size of the preview item name */
+    font-weight: 600;
+    /* Font weight of the preview item name */
+    margin: 1.8rem 0;
+    /* Margin of the preview item name */
+    position: relative;
+    /* Position the preview item name relatively */
+}
+
+/* Preview item name after styles */
+.preview-item-name::after {
+    position: absolute;
+    /* Position the pseudo-element absolutely */
+    content: "";
+    /* Empty content of the pseudo-element */
+    bottom: -10px;
+    /* Position the pseudo-element from the bottom */
+    width: 50px;
+    /* Width of the pseudo-element */
+    height: 1.5px;
+    /* Height of the pseudo-element */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Background color of the pseudo-element */
+    left: 50%;
+    /* Position the pseudo-element from the left */
+    transform: translateX(-50%);
+    /* Translate the pseudo-element horizontally */
+}
+
+/* Preview block styles */
+.preview-blk {
+    padding: 1rem 0;
+    /* Padding of the preview block */
+    margin-bottom: 1rem;
+    /* Margin at the bottom of the preview block */
+}
+
+/* Preview block title styles */
+.preview-blk-title h3 {
+    text-transform: uppercase;
+    /* Text transformation of the preview block title */
+    letter-spacing: 0.5px;
+    /* Letter spacing of the preview block title */
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+    /* Bottom border of the preview block title */
+    padding-bottom: 0.5rem;
+    /* Padding at the bottom of the preview block title */
+}
+
+/* Preview block title margin styles */
+.preview-blk-title {
+    margin-bottom: 1rem;
+    /* Margin at the bottom of the preview block title */
+}
+
+/* Preview block list styles */
+.preview-blk-list .preview-item {
+    font-size: 1.5rem;
+    /* Font size of the preview block list item */
+    margin-bottom: 0.2rem;
+    /* Margin at the bottom of the preview block list item */
+    opacity: 0.95;
+    /* Opacity of the preview block list item */
+}
+
+/* Preview block title color styles */
+.preview-cnt-r .preview-blk-title {
+    color: var(--clr-dark);
+    /* Color of the preview block title in the right section */
+}
+
+/* Preview block list margin styles */
+.preview-cnt-r .preview-blk-list .preview-item {
+    margin-top: 1.8rem;
+    /* Margin at the top of the preview block list item */
+}
+
+/* Preview block list first-child styles for achievements, educations, and experiences */
+.achievements-items.preview-blk-list .preview-item span:first-child,
+.educations-items.preview-blk-list .preview-item span:first-child,
+.experiences-items.preview-blk-list .preview-item span:first-child {
+    display: block;
+    /* Display the first-child span as a block element */
+    font-weight: 600;
+    /* Font weight of the first-child span */
+    margin-bottom: 1rem;
+    /* Margin at the bottom of the first-child span */
+    background-color: rgba(0, 0, 0, 0.03);
+    /* Background color of the first-child span */
+}
+
+/* Educations and experiences second-child span styles */
+.educations-items.preview-blk-list .preview-item span:nth-child(2),
+.experiences-items.preview-blk-list .preview-item span:nth-child(2) {
+    font-weight: 600;
+    /* Font weight of the second-child span */
+    margin-right: 1rem;
+    /* Margin on the right of the second-child span */
+}
+
+/* Educations and experiences third-child span styles */
+.educations-items.preview-blk-list .preview-item span:nth-child(3),
+.experiences-items.preview-blk-list .preview-item span:nth-child(3) {
+    font-style: italic;
+    /* Apply italic style to the third-child span */
+    margin-right: 1rem;
+    /* Margin on the right of the third-child span */
+}
+
+/* Educations and experiences fourth-child and fifth-child span styles */
+.educations-items.preview-blk-list .preview-item span:nth-child(4),
+.educations-items.preview-blk-list .preview-item span:nth-child(5),
+.experiences-items.preview-blk-list .preview-item span:nth-child(4),
+.experiences-items.preview-blk-list .preview-item span:nth-child(5) {
+    margin-right: 1rem;
+    /* Margin on the right of the fourth-child and fifth-child spans */
+    background-color: var(--clr-green);
+    /* Background color of the fourth-child and fifth-child spans */
+    color: var(--clr-white);
+    /* Color of the fourth-child and fifth-child spans */
+    padding: 0 1rem;
+    /* Padding of the fourth-child and fifth-child spans */
+    border-radius: 0.6rem;
+    /* Border radius of the fourth-child and fifth-child spans */
+}
+
+/* Educations and experiences sixth-child span styles */
+.educations-items.preview-blk-list .preview-item span:nth-child(6),
+.experiences-items.preview-blk-list .preview-item span:nth-child(6) {
+    font-size: 13.5px;
+    /* Font size of the sixth-child span */
+    display: block;
+    /* Display the sixth-child span as a block element */
+    opacity: 0.8;
+    /* Opacity of the sixth-child span */
+    margin-top: 1rem;
+    /* Margin at the top of the sixth-child span */
+}
+
+/* Projects items preview block list span styles */
+.projects-items.preview-blk-list .preview-item span {
+    display: block;
+    /* Display the span as a block element */
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) {
+
+    /* Columns styles for 3 columns */
+    .cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+        /* Grid template columns for 3 columns */
+        column-gap: 2rem;
+        /* Gap between columns */
+    }
+
+    /* Columns styles for 2 columns */
+    .cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+        /* Grid template columns for 2 columns */
+        column-gap: 2rem;
+        /* Gap between columns */
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    /* CV form row padding styles for larger screens */
+    .cv-form-row {
+        padding: 3rem 3rem 0rem 3rem;
+        /* Padding of the CV form row for larger screens */
+    }
+
+    /* Columns styles for 3 columns */
+
+
+    /* Print button section */
+    .print-btn-sc {
+        margin: 2rem 0 6rem 0;
+        /* Margin of the print button section */
+    }
+
+    /* Print section styles */
+    @media print {
+        body * {
+            visibility: hidden;
+            /* Hide all elements in the body */
+        }
+
+        .non_print_area {
+            display: none;
+            /* Hide the non-print area */
+        }
+
+        .print_area,
+        .print_area * {
+            visibility: visible;
+            /* Make the print area and its children visible */
+        }
+
+        .print_area {
+            width: 100%;
+            /* Set the width of the print area to 100% */
+            position: absolute;
+            /* Position the print area absolutely */
+            left: 0;
+            /* Align the print area to the left */
+            top: 0;
+            /* Align the print area to the top */
+            overflow: hidden;
+            /* Hide the overflow of the print area */
+        }
+    }
+}
